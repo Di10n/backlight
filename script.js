@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    let temp = window.location.href.split("=")[1] || "5500"
+    let temp = window.location.href.split("=")[1] || "6500"
     let hex = tempToHex(temp);
     document.getElementsByTagName("body")[0].style.backgroundColor = hex;
     window.history.pushState("", "", "?temp=" + temp);
